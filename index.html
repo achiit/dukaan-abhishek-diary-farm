@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#176b45">
+  <title>ABHISHEK DIARY FARM | ताज़ा दूध, भरोसे के साथ</title>
+  <meta name="description" content="ABHISHEK DIARY FARM, मोहनपुर, देवघर में गाय और भैंस का दूध उपलब्ध। ऑर्डर के लिए WhatsApp या कॉल करें।">
+  <style>
+    :root{--green:#176b45;--deep:#104b34;--mint:#eaf7ef;--gold:#f5c45b;--ink:#183128;--muted:#64756d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:#fbfdfb;line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #153b2510}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--deep);letter-spacing:.2px}
+    .logo{width:46px;height:46px;border-radius:15px;background:var(--mint);display:grid;place-items:center;font-size:25px}
+    .links{display:flex;gap:24px;color:#43574d;font-size:14px}.links a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;background:var(--green);color:white;font-weight:700;border:0}
+    .btn:hover{background:var(--deep)}.btn.alt{background:white;color:var(--green);border:1px solid #cfe5d6}
+    .hero{background:radial-gradient(circle at 85% 20%,#d7f1df 0,transparent 30%),linear-gradient(120deg,#eff9f1,#fff 60%);padding:76px 0 68px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
+    .eyebrow{display:inline-block;background:#dff2e5;color:var(--green);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:700}
+    h1{font-size:clamp(38px,5.5vw,64px);line-height:1.08;margin:18px 0;color:var(--deep);letter-spacing:-1.5px}
+    h1 span{color:var(--green)}.lead{font-size:18px;color:#53675c;max-width:560px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .hero-art{min-height:340px;border-radius:32px;background:linear-gradient(145deg,#dff3e5,#b9e3c8);display:grid;place-items:center;position:relative;overflow:hidden}
+    .milk-emoji{font-size:150px;filter:drop-shadow(0 16px 12px #286b3b22)}
+    .art-label{position:absolute;bottom:24px;background:#ffffffdf;padding:12px 18px;border-radius:18px;font-weight:700;color:var(--deep)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px;max-width:550px}
+    .stat{background:#fff;border:1px solid #e5efe8;border-radius:16px;padding:14px;text-align:center}
+    .stat strong{display:block;color:var(--green);font-size:23px}.stat small{color:var(--muted)}
+    section{padding:72px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 35px}
+    h2{font-size:clamp(28px,4vw,40px);margin:0 0 10px;color:var(--deep)}
+    .section-head p{color:var(--muted);margin:0}
+    .products{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:850px;margin:auto}
+    .product{background:white;border:1px solid #e5eee8;border-radius:24px;padding:28px;box-shadow:0 12px 30px #18312808}
+    .product-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .product-icon{width:60px;height:60px;background:var(--mint);border-radius:18px;display:grid;place-items:center;font-size:31px}
+    .price{font-size:32px;color:var(--green);font-weight:800;white-space:nowrap}.price small{font-size:13px;color:var(--muted);font-weight:500}
+    .product h3{font-size:22px;margin:18px 0 4px}.product p{margin:0;color:var(--muted)}
+    .features{background:var(--mint)}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{background:#fff;padding:24px;border-radius:20px}.feature b{display:block;margin:9px 0 4px;color:var(--deep)}
+    .feature p{margin:0;color:var(--muted);font-size:14px}.feature .ico{font-size:27px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+    .about-card{background:linear-gradient(145deg,#176b45,#104b34);color:#fff;border-radius:26px;padding:32px;min-height:245px;display:flex;flex-direction:column;justify-content:center}
+    .about-card strong{font-size:50px;line-height:1}.about-card span{opacity:.85;margin-top:10px}
+    .about-copy p{color:var(--muted)}
+    .contact{background:#f0f8f2}.contact-box{background:#fff;border-radius:28px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;box-shadow:0 12px 35px #18312808}
+    .contact-item{margin:13px 0;color:#53675c}.contact-item strong{color:var(--deep)}
+    footer{background:#103e2c;color:#d8e9de;padding:26px 0;text-align:center;font-size:13px}
+    .float{position:fixed;right:18px;bottom:18px;background:#20b85a;color:white;border-radius:50px;padding:14px 18px;font-weight:800;box-shadow:0 8px 25px #0002;z-index:20}
+    @media(max-width:760px){.links{display:none}.hero{padding:52px 0}.hero-grid,.about-grid,.contact-box{grid-template-columns:1fr}.hero-art{min-height:250px}.milk-emoji{font-size:120px}.products{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:10px 5px}.stat strong{font-size:19px}section{padding:55px 0}.contact-box{padding:25px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">🥛</span><span>ABHISHEK DIARY FARM</span></a>
+    <nav class="links"><a href="#home">होम</a><a href="#products">दूध के प्रकार</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></nav>
+    <a class="btn" href="https://wa.me/917488571546?text=Namaste%2C%20mujhe%20doodh%20order%20karna%20hai." target="_blank" rel="noopener">WhatsApp Order</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">मोहनपुर, देवघर • 17 वर्षों का अनुभव</span>
+        <h1>ताज़ा दूध,<br><span>भरोसे के साथ।</span></h1>
+        <p class="lead">ABHISHEK DIARY FARM में गाय और भैंस का दूध उपलब्ध है। दूध का ऑर्डर देने के लिए हमें कॉल या WhatsApp करें।</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/917488571546?text=Namaste%2C%20mujhe%20doodh%20order%20karna%20hai." target="_blank" rel="noopener">🥛 अभी ऑर्डर करें</a>
+          <a class="btn alt" href="tel:+917488571546">📞 कॉल करें</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>17 साल</strong><small>अनुभव</small></div>
+          <div class="stat"><strong>2 प्रकार</strong><small>दूध उपलब्ध</small></div>
+          <div class="stat"><strong>24×7</strong><small>ऑर्डर संपर्क</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="दूध का चित्र"><div class="milk-emoji">🥛🐄</div><div class="art-label">Fresh Milk • Daily Orders</div></div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">हमारे उत्पाद</span><h2>हमारे यहाँ उपलब्ध दूध</h2><p>अपनी पसंद का दूध चुनें और ऑर्डर के लिए संपर्क करें।</p></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-top"><div class="product-icon">🐄</div><div class="price">₹65 <small>/ kg</small></div></div>
+          <h3>गाय का दूध</h3><p>गाय का दूध उपलब्ध। ऑर्डर और उपलब्धता के लिए संपर्क करें।</p>
+        </article>
+        <article class="product">
+          <div class="product-top"><div class="product-icon">🐃</div><div class="price">₹75 <small>/ kg</small></div></div>
+          <h3>भैंस का दूध</h3><p>भैंस का दूध उपलब्ध। ऑर्डर और उपलब्धता के लिए संपर्क करें।</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">हमें क्यों चुनें?</span><h2>आपका भरोसा, हमारी प्राथमिकता</h2><p>स्थानीय डेयरी सेवा और सीधे संपर्क की सुविधा।</p></div>
+      <div class="feature-grid">
+        <div class="feature"><div class="ico">🌿</div><b>डेयरी का अनुभव</b><p>17 वर्षों से डेयरी फार्म का अनुभव।</p></div>
+        <div class="feature"><div class="ico">🥛</div><b>दो विकल्प</b><p>गाय और भैंस का दूध—दोनों उपलब्ध।</p></div>
+        <div class="feature"><div class="ico">📲</div><b>आसान ऑर्डर</b><p>फोन कॉल या WhatsApp से सीधे संपर्क करें।</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-card"><strong>17+</strong><span>वर्षों का डेयरी फार्म अनुभव</span></div>
+      <div class="about-copy"><span class="eyebrow">हमारे बारे में</span><h2>ABHISHEK DIARY FARM</h2><p>ABHISHEK DIARY FARM, मोहनपुर, देवघर, झारखंड में स्थित एक स्थानीय डेयरी फार्म है। यहाँ गाय और भैंस का दूध उपलब्ध है। हमारा उद्देश्य ग्राहकों को सरल ऑर्डर प्रक्रिया और सीधे संपर्क की सुविधा देना है।</p><p><strong>मालिक:</strong> Abhishek Kumar</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div><span class="eyebrow">संपर्क करें</span><h2>दूध का ऑर्डर देना है?</h2><p style="color:#64756d">ऑर्डर और उपलब्धता की जानकारी के लिए कॉल या WhatsApp करें।</p>
+          <div class="actions"><a class="btn" href="https://wa.me/917488571546?text=Namaste%2C%20mujhe%20doodh%20order%20karna%20hai." target="_blank" rel="noopener">WhatsApp करें</a><a class="btn alt" href="tel:+917488571546">अभी कॉल करें</a></div>
+        </div>
+        <div>
+          <div class="contact-item">👤 <strong>मालिक:</strong> Abhishek Kumar</div>
+          <div class="contact-item">📞 <strong>फोन:</strong> <a href="tel:+917488571546">7488571546</a></div>
+          <div class="contact-item">📍 <strong>स्थान:</strong> Mohanpur, Deoghar, Jharkhand</div>
+          <div class="contact-item">🕒 <strong>ऑर्डर संपर्क:</strong> 24×7</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 ABHISHEK DIARY FARM. All rights reserved.<br>मोहनपुर, देवघर, झारखंड</div></footer>
+<a class="float" href="https://wa.me/917488571546?text=Namaste%2C%20mujhe%20doodh%20order%20karna%20hai." target="_blank" rel="noopener">WhatsApp Order</a>
+</body>
+</html>
